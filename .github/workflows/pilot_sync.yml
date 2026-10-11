@@ -1,0 +1,45 @@
+name: Pilot Roster Sync
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write 
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Sync Script
+        env:
+          VAMSYS_CLIENT_ID: ${{ secrets.VAMSYS_CLIENT_ID }}
+          VAMSYS_CLIENT_SECRET: ${{ secrets.VAMSYS_CLIENT_SECRET }}
+        run: python pilot_sync.py
+
+      - name: Commit and Push to GitHub
+        run: |
+          git config --local user.email "233835952+XionIhsaka@users.noreply.github.com"
+          git config --local user.name "Chris Eibl"
+          
+          git add pilot_activity.json
+          
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Update pilot roster [skip ci]"
+            git push origin main
+          fi
