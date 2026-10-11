@@ -10,9 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      # 1. Checkout using your PAT so Vercel recognizes the 'Author'
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-
-      # 1. Setup Environment
+      # 2. Setup Environment
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -21,14 +23,14 @@ jobs:
       - name: Install Dependencies
         run: pip install requests
 
-      # 2. Run the Python Script
+      # 3. Run the Python Script
       - name: Run Sync Script
         env:
           VAMSYS_CLIENT_ID: ${{ secrets.VAMSYS_CLIENT_ID }}
           VAMSYS_CLIENT_SECRET: ${{ secrets.VAMSYS_CLIENT_SECRET }}
         run: python pilot_sync.py
 
-      # 3. Commit the new JSON file
+      # 4. Commit the new JSON file
       - name: Commit and Push to GitHub
         run: |
           # REPLACE THESE with your actual GitHub email and username
