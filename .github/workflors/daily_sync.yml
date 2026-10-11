@@ -8,8 +8,8 @@ on:
 jobs:
   sync-and-deploy:
     runs-on: ubuntu-latest
-  permissions:
-    contents: write
+    permissions:
+      contents: write
     
     steps:
       # 1. Checkout using your PAT so Vercel recognizes the 'Author'
