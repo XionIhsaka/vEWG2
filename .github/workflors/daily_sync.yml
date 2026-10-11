@@ -8,14 +8,13 @@ on:
 jobs:
   sync-and-deploy:
     runs-on: ubuntu-latest
+  permissions:
+    contents: write
     
     steps:
       # 1. Checkout using your PAT so Vercel recognizes the 'Author'
       - name: Checkout Code
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GH_PAT }}
-          fetch-depth: 0
 
       # 2. Setup Environment
       - name: List all downloaded files
