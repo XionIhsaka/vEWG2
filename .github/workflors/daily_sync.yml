@@ -18,6 +18,8 @@ jobs:
           fetch-depth: 0
 
       # 2. Setup Environment
+      - name: List all downloaded files
+        run: ls -laR
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
