@@ -1,7 +1,13 @@
 {
-    "updated_at": "2026-10-16 10:22:36",
-    "total": 2034,
+    "updated_at": "2026-10-16 15:48:32",
+    "total": 2036,
     "pilots": [
+        {
+            "pilot_id": "EWG7989"
+        },
+        {
+            "pilot_id": "EWG7988"
+        },
         {
             "pilot_id": "EWG7987"
         },
