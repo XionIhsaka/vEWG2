@@ -1,7 +1,10 @@
 {
-    "updated_at": "2026-11-12 22:59:50",
-    "total": 2109,
+    "updated_at": "2026-11-13 04:14:05",
+    "total": 2103,
     "pilots": [
+        {
+            "pilot_id": "EWG8102"
+        },
         {
             "pilot_id": "EWG8101"
         },
@@ -3483,19 +3486,10 @@
             "pilot_id": "EWG6842"
         },
         {
-            "pilot_id": "EWG6841"
-        },
-        {
-            "pilot_id": "EWG6840"
-        },
-        {
             "pilot_id": "EWG6839"
         },
         {
             "pilot_id": "EWG6838"
-        },
-        {
-            "pilot_id": "EWG6837"
         },
         {
             "pilot_id": "EWG6835"
@@ -4395,9 +4389,6 @@
             "pilot_id": "EWG5927"
         },
         {
-            "pilot_id": "EWG5922"
-        },
-        {
             "pilot_id": "EWG5920"
         },
         {
@@ -4510,9 +4501,6 @@
         },
         {
             "pilot_id": "EWG5782"
-        },
-        {
-            "pilot_id": "EWG5781"
         },
         {
             "pilot_id": "EWG5774"
@@ -4918,9 +4906,6 @@
         },
         {
             "pilot_id": "EWG5215"
-        },
-        {
-            "pilot_id": "EWG5203"
         },
         {
             "pilot_id": "EWG5198"
@@ -5494,9 +5479,6 @@
         },
         {
             "pilot_id": "EWG3975"
-        },
-        {
-            "pilot_id": "EWG3973"
         },
         {
             "pilot_id": "EWG3964"
