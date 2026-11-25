@@ -1,7 +1,10 @@
 {
-    "updated_at": "2026-11-24 16:44:56",
-    "total": 2116,
+    "updated_at": "2026-11-25 01:46:45",
+    "total": 2115,
     "pilots": [
+        {
+            "pilot_id": "EWG8132"
+        },
         {
             "pilot_id": "EWG8131"
         },
@@ -1096,6 +1099,9 @@
         },
         {
             "pilot_id": "EWG7751"
+        },
+        {
+            "pilot_id": "EWG7750"
         },
         {
             "pilot_id": "EWG7749"
@@ -3513,12 +3519,6 @@
             "pilot_id": "EWG6859"
         },
         {
-            "pilot_id": "EWG6858"
-        },
-        {
-            "pilot_id": "EWG6857"
-        },
-        {
             "pilot_id": "EWG6856"
         },
         {
@@ -4264,9 +4264,6 @@
         },
         {
             "pilot_id": "EWG6124"
-        },
-        {
-            "pilot_id": "EWG6118"
         },
         {
             "pilot_id": "EWG6112"
