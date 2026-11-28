@@ -1,6 +1,6 @@
 {
-    "updated_at": "2026-11-27 15:51:59",
-    "total": 2115,
+    "updated_at": "2026-11-28 00:52:23",
+    "total": 2112,
     "pilots": [
         {
             "pilot_id": "EWG8138"
@@ -3516,13 +3516,7 @@
             "pilot_id": "EWG6864"
         },
         {
-            "pilot_id": "EWG6863"
-        },
-        {
             "pilot_id": "EWG6862"
-        },
-        {
-            "pilot_id": "EWG6861"
         },
         {
             "pilot_id": "EWG6860"
@@ -4960,9 +4954,6 @@
         },
         {
             "pilot_id": "EWG5197"
-        },
-        {
-            "pilot_id": "EWG5188"
         },
         {
             "pilot_id": "EWG5184"
